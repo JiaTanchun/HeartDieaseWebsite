@@ -13,18 +13,20 @@
     <div class="container">
 
         <h1 class="title">Heart Disease Prediction</h1>
+        <p>Are you wondering about the condition of your heart?</p>
+        <p>This website will help you self-diagnose a bit!</p>
 
         <form method="post">
             <div class="form-group mb-4">
-                <label for="sex">Sex:</label>
-                <select class="form-control" id="sex" name="sex" required>
+                <label for="Sex">Sex:</label>
+                <select class="form-control" id="Sex" name="Sex" required>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                 </select>
             </div>
             <div class="form-group mb-4">
-                <label for="ageCategory">Age Category:</label>
-                <select class="form-control" id="ageCategory" name="ageCategory" required>
+                <label for="AgeCategory">Age Category:</label>
+                <select class="form-control" id="AgeCategory" name="AgeCategory" required>
                     <option value="0">18-24</option>
                     <option value="1">25-29</option>
                     <option value="2">30-34</option>
@@ -41,12 +43,12 @@
                 </select>
             </div>
             <div class="form-group mb-4">
-                <label for="bmi">BMI:</label>
-                <input class="form-control" type="text" id="bmi" name="bmi" min="0.01" max="40" required>
+                <label for="BMI">BMI:</label>
+                <input class="form-control" type="text" id="BMI" name="BMI" min="0.01" max="40" required>
             </div>
             <div class="form-group mb-4">
-                <label for="sleephours">Sleep Hours:</label>
-                <input class="form-control" type="number" id="sleephours" name="sleephours" min="0" max="24" required>
+                <label for="SleepHours">Sleep Hours:</label>
+                <input class="form-control" type="number" id="SleepHours" name="SleepHours" min="0" max="24" required>
             </div>
             
             <div class="form-group mb-4">
@@ -59,7 +61,7 @@
             </div>
             <div class="form-group mb-4">
                 <label for="sleepCategory">Sleep Category:</label>
-                <select class="form-control" id="sleepCategory" name="sleepCategory" required>
+                <select class="form-control" id="SleepCategory" name="SleepCategory" required>
                     <option value="0">Very Short</option>
                     <option value="1">Short</option>
                     <option value="2">Recommended</option>
@@ -91,13 +93,6 @@
             <div class="form-group mb-4">
                 <label for="PhysicalActivities">Have you played any sports in the past month? :</label>
                 <select class="form-control" id="PhysicalActivities" name="PhysicalActivities" required>
-                    <option value="0">No</option>
-                    <option value="1">Yes</option>
-                </select>
-            </div>
-            <div class="form-group mb-4">
-                <label for="HadAngina">Do you has had agina or not:</label>
-                <select class="form-control" id="HadAngina" name="HadAngina" required>
                     <option value="0">No</option>
                     <option value="1">Yes</option>
                 </select>
