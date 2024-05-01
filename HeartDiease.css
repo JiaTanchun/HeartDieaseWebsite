@@ -16,3 +16,15 @@
     background-color: #0056b3; 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
+
+
+.title {
+    text-align: center; 
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+    color: #34568B; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 36px; 
+    font-weight: bold; 
+    text-shadow: 1px 1px 2px #B0C4DE; 
+}
