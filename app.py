@@ -43,8 +43,12 @@ def index():
         input_df = pd.DataFrame([data])
         input_scaled = scaler.transform(input_df)
         prediction = model.predict(input_scaled)
+        probability=model.predict_proba(input_scaled)
 
-        return f'Prediction: {prediction[0]}'
+        if prediction[0] == 0:
+            return render_template('prediction_0.html',probability=probability[0][0])
+        else:
+            return render_template('prediction_1.html',probability=probability[0][1])
     return render_template("index.html")
 
 
