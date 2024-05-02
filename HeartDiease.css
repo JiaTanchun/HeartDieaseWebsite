@@ -28,3 +28,12 @@
     font-weight: bold; 
     text-shadow: 1px 1px 2px #B0C4DE; 
 }
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
