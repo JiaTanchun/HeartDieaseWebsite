@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 
 app = Flask(__name__)
 
-train_dataset = pd.read_csv('data/cleaned_heartdisease_data.csv')
+train_dataset = pd.read_csv('data/train_data.csv')
 X_train = train_dataset.iloc[:, 0:-1].values
 y_train = train_dataset.iloc[:, -1].values
 

@@ -9,7 +9,13 @@
 <body>
     <img src="static/Prediction_0.jpg" alt="Healthy Image">
 
-    <p>The probability that you won't have heart disease is <span class="bold-text">{{ probability|round(2) }}</span>.</p>
+    <p>The probability that you will have heart disease is <span class="bold-text">{{ ((1-probability) * 100)|round(2) }}%</span>.</p>
+
     <h1>You are healthy!</h1>
+    <p>Keep in mind that this results is not equivalent to a medical diagnosis! This model would never be adopted by health care facilities because of its less than perfect accuracy, so if you have any problems, consult a human doctor.</p>
 </body>
+<footer>
+  <p>You can see the steps of building the model on my GitHub repo</p>
+  <p><a href="https://github.com/JiaTanchun/HeartDieaseWebsite">JiaTanchun</a></p>
+</footer>
 </html>
